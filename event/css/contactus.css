@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-color: #e6ecff;
+}
+
+.box {
+  width: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 100px;
+  text-align: center;
+  margin: auto;
+  margin-top: 10%;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+
+h5 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+p {
+  text-align: justify;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #666699;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+  text-align: center;
+}

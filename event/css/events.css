@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  /* min-height: 100%; */
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+  padding-left: 20px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+table, th, td {
+  border: none;
+}
+
+th {
+  height: 20px;
+}
+
+th {
+  text-align: left;
+  vertical-align: bottom;
+}
+
+td {
+  height: 30px;
+  vertical-align: bottom;
+}
+
+.break {
+  height: 30px;
+  border-bottom: solid 1px;
+  border-bottom-color: #92a8d1;
+}
+
+.break2 {
+  height: 30px;
+  border-bottom: solid 1px;
+  border-bottom-color: #92a8d1;
+}
+
+th, td {
+  border-bottom: none;
+}
+
+th {
+  color: white;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color: #404040;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'left middle middle middle middle right'
+    'footer footer footer footer footer footer';
+  grid-column-gap: 10px;
+}
+
+.left,
+.middle,
+.right {
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+.big p {
+  background-color: #ffffff;
+  color: blue;
+  line-height: 1.8;
+  padding: 4px;
+}
+
+.left h4 {
+  text-align: center;
+  background-color: #ffffff;
+  color: blue;
+  padding: 10px;
+}
+
+.valutaT {
+  background-color: #ffffff;
+  color: blue;
+  padding: 10px;
+}
+
+.valutaT table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1px;
+}
+
+.valutaT tr {
+  border-bottom: solid black 1px;
+  border-bottom-color: #92a8d1;
+}
+
+.valutaT th {
+  height: 30px;
+  background-color: #ffffff;
+}
+
+.valutaT td {
+  height: 35px;
+  vertical-align: bottom;
+}
+
+.valutaT tr:hover {
+  background-color: #b3b3b3;
+}
+
+.valutaT th {
+  color: blue;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+.right h4 {
+  text-align: center;
+  background-color: #ffffff;
+  color: blue;
+  padding: 10px;
+}
+
+.right #floating-panel {
+  position: absolute;
+  top: 140px;
+  left: 85.8%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 2px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  line-height: 30px;
+  padding-left: 2px;
+}
+
+.right #floating-panel {
+  width: 238px;
+}
+
+#purpose {
+  margin-top: 30px;
+}
+
+#purpose p {
+  width: 550px;
+  margin-left: 50px;
+  margin-top: 20px;
+  background-color: white;
+  color: blue;
+  line-height: 1.5;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color: #666699;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  color: white;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}
